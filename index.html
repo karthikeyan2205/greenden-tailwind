@@ -15,7 +15,6 @@
     <title>Greenden</title>
   </head>
   <body>
-
     <!-- Navbar -->
     <div
       class="flex justify-between p-3 items-center bg-green-100 shadow-2xl sticky z-10 top-0"
@@ -23,28 +22,43 @@
       <h5 class="text-2xl">GREENDEN</h5>
 
       <div class="flex gap-5 text-gray-500 hidden md:flex">
-        <a
-          href="index.html"
-          class="hover:text-black hover:underline"
-          >Home</a
-        >
-        <a
-          href="product.html"
-          class="hover:text-black hover:underline"
+        <a href="index.html" class="hover:text-black hover:underline">Home</a>
+        <a href="product.html" class="hover:text-black hover:underline"
           >Products</a
         >
-        <a
-          href="contact.html"
-          class="hover:text-black hover:underline"
+        <a href="contact.html" class="hover:text-black hover:underline"
           >Contact</a
         >
       </div>
       <img
+        id="navbar"
         src="./images/navigation.png"
         alt=""
         width="30px"
-        class="md:hidden"
+        class="md:hidden cursor-pointer"
       />
+    </div>
+
+    <!-- side navbar -->
+    <div
+      id="sidenav"
+      style="width: 50%;height: 100%;margin-left: 50%;"
+      class="hidden fixed shadow-2xl z-20 top-0 bg-green-100"
+    >
+      <p class="font-medium text-2xl text-right p-5 cursor-pointer" id="exit">
+        x
+      </p>
+      <div
+        class="flex flex-col gap-10 text-gray-500 justify-center items-center"
+      >
+        <a href="index.html" class="hover:text-black hover:underline">Home</a>
+        <a href="product.html" class="hover:text-black hover:underline"
+          >Products</a
+        >
+        <a href="contact.html" class="hover:text-black hover:underline"
+          >Contact</a
+        >
+      </div>
     </div>
 
     <!-- Header section -->
@@ -53,7 +67,9 @@
         <p class="mb-4">
           We offer you a wide range of artifical and natural flowers
         </p>
-        <h2 class="text-3xl font-bold md:text-5xl mb-5">Plants for you Interior</h2>
+        <h2 class="text-3xl font-bold md:text-5xl mb-5">
+          Plants for you Interior
+        </h2>
         <div>
           <button class="bg-black text-white rounded p-2">Shop Now</button>
           <button class="bg-green-100 border rounded border-black p-2">
@@ -233,13 +249,22 @@
     </div>
 
     <!-- News and letter -->
-     <div class="text-center m-5">
+    <div class="text-center m-5">
       <h1 class="font-bold text-3xl">Join our News Letter</h1>
-      <p>Signup for our email newspaper to get exclusive discounts, updates , and more</p>
-      <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
-      <br>
-      <button class="border border-black p-2 text-white bg-black">Subscribe</button>
-     </div>
+      <p>
+        Signup for our email newspaper to get exclusive discounts, updates , and
+        more
+      </p>
+      <input
+        type="text"
+        class="border border-black p-2 m-3"
+        style="width: 80%;"
+      />
+      <br />
+      <button class="border border-black p-2 text-white bg-black">
+        Subscribe
+      </button>
+    </div>
 
     <!-- Footer -->
     <div class="flex flex-col gap-5 p-10 bg-green-100">
@@ -251,5 +276,7 @@
       <p>@ 2021 Greenday.com</p>
     </div>
 
+    <script src="home.js">
+    </script>
   </body>
 </html>

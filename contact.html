@@ -16,6 +16,20 @@
   </head>
 <body>
 
+    <!-- side navbar -->
+    <div id="sidenav" style="width: 50%;height: 100%;margin-left: 50%;" class="hidden fixed shadow-2xl z-20 top-0 bg-green-100">
+        <p class="font-medium text-2xl text-right p-5 cursor-pointer" id="exit">x</p>
+        <div class="flex flex-col gap-10 text-gray-500 justify-center items-center">
+          <a href="index.html" class="hover:text-black hover:underline">Home</a>
+          <a href="product.html" class="hover:text-black hover:underline"
+            >Products</a
+          >
+          <a href="contact.html" class="hover:text-black hover:underline"
+            >Contact</a
+          >
+        </div>
+    </div>
+
     <!-- Navbar -->
     <div
       class="flex justify-between p-3 items-center bg-green-100 shadow-2xl sticky z-10 top-0"
@@ -23,27 +37,20 @@
       <h5 class="text-2xl">GREENDEN</h5>
 
       <div class="flex gap-5 text-gray-500 hidden md:flex">
-        <a
-          href="index.html"
-          class="hover:text-black hover:underline"
-          >Home</a
-        >
-        <a
-          href="product.html"
-          class="hover:text-black hover:underline"
+        <a href="index.html" class="hover:text-black hover:underline">Home</a>
+        <a href="product.html" class="hover:text-black hover:underline"
           >Products</a
         >
-        <a
-          href="contact.html"
-          class="hover:text-black hover:underline"
+        <a href="contact.html" class="hover:text-black hover:underline"
           >Contact</a
         >
       </div>
       <img
+        id="navbar"
         src="./images/navigation.png"
         alt=""
         width="30px"
-        class="md:hidden"
+        class="md:hidden cursor-pointer"
       />
     </div>
 
@@ -79,6 +86,9 @@
       </p>
       <p>@ 2021 Greenday.com</p>
     </div>
+
+     <script src="contact.js"> 
+    </script>
 
 </body>
 </html>
